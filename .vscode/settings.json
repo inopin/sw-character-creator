@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true, // форматировать при сохранении
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // использовать Prettier
+  "prettier.requireConfig": true // требовать файл конфигурации
+}
