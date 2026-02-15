@@ -1,35 +1,39 @@
+import CaracterForm from "@/components/character-creator/CaracterForm";
+import Header from "@/components/header/header";
 import { attributes, edges, hindrances, races, skills } from "@/lib/mockData";
 
 
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <ul>
+    <div className="flex flex-col columb min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black p-4">
+      <Header/>
+      <CaracterForm></CaracterForm>
+      {/* <ul>
         {races.map(race => {
           return (
-            <li>{race.name} key={race.name}</li>
+            <li key={race.name}>{race.name} </li>
           )
-        }) }
+        }) } 
       </ul>
       <ul>
         {attributes.map(attr=>{
           return (
-            <li>{attr.name} key={attr.id}</li>
+            <li  key={attr.id}>{attr.name}</li>
           )
         })}
       </ul>
       <ul>
         {skills.map(skill => {
           return ( 
-            <li>{skill.name} key={skill.id}</li>
+            <li key={skill.id}>{skill.name} </li>
           )
         })}
       </ul>
       <ul>
         {hindrances.map(hindranc=>{
           return (
-            <li>{hindranc.name} key={hindranc.id}
+            <li key={hindranc.id}>{hindranc.name} 
             </li>
           )
         })}
@@ -37,10 +41,10 @@ export default function Home() {
       <ul>
         {edges.map(edge=>{
           return (
-            <li>{edge.name} key={edge.id}</li>
+            <li key={edge.id}>{edge.name} </li>
           )
         })}
-      </ul>
+      </ul> */}
     </div>
   );
 }
